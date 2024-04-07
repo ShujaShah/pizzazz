@@ -1,17 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SearchOrder from '../features/order/SearchOrder';
+import Username from '../features/user/Username';
 
 const Header = () => {
   return (
-    <header className='bg-yellow-500'>
-      <Link to="/">Pizzazz</Link>
+    <header className='bg-yellow-500 uppercase'>
+      <Link to="/" className='tracking-widest'>Pizzazz</Link>
       <SearchOrder />
-      <p>
-        <span>23 Pizzas</span>
-        <span>$23.45</span>
-      </p>
-      <Link to="/cart">Open cart &rarr;</Link>
+    <Username/>
     </header>
   );
 };
